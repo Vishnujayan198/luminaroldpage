@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <style>
+    #im {
+      height: 500px;
+      width: 500px;
+
+      background-size: contain;
+    }
+    h1{
+      margin-top: -411px;
+      margin-left: -200px;
+    }
+    body{
+      text-align: left;
+    }
+
+    .modal-footer
+    {
+        justify-content: left;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg" style="background-color:white;">
+    <div class="container">
+      <a class="navbar-brand text-white " href="#"><img   src="images/logo luminar.png" alt=""></a>
+      <!-- icon tag -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link  ">home</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link  ">About</a>
+              </li>
+               <li class="nav-item ">
+                <a class="nav-link  ">Courses</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link  ">Our placements </a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link ">Gallery</a>
+              </li>
+              <li class="nav-item  ">
+                <a class="nav-link ">Contact</a>
+              </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img id="im" src="images/5.jpeg.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>keralas no.1 IT school 100% placement assistance</h1>
+          <p>
+            We at LUMINAR TECHNOLAB offer best software training and placement in emerging
+            technologies like BIG DATA, Data Science,Mechine Learning,PHYTHON,Software Testing</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img id="im" src="images/girl.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1> Big Data-HaDoop&Spark Python Data Science</h1>
+          <p> We atLUMINAR TECHNOLAB offer best software training and placement in emerging
+            technologies like Big Data,Hadoop,Spark,Data Science,Mechine Learning,Deep Learning & AI.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Register now
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Get Training Quote For Free</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+
+          <form class="border bg-light w-50 container p-3 mt-3" action="">
+              
+         <div  class="p-2 mt-2 ">     
+          <input type="text" name="" id="s" placeholder="name">
+          <input type="text" placeholder="email id"> <br>
+          <input type="text" placeholder="Phone number"> <br>
+      
+
+      
+          <label for="">Select course interested in</label> 
+          <select name="" id="">
+              <option  value="">A.I</option> 
+              <option value="">Data Science</option> 
+              <option value="">Python</option> 
+              <option value="">testing</option> 
+
+              <input type="text" placeholder="City"> <br>
+              <input type="text" placeholder="Comments"> <br>
+
+
+
+      
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="bu"  type="button" class="btn btn-primary">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+
+
+  
+</body>
+
+</html>
